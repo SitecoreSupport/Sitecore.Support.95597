@@ -60,8 +60,9 @@
       <HintPath>..\packages\SC.Sitecore.ContentSearch.Linq.8.1.1\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch.SolrProvider">
-      <HintPath>C:\inetpub\wwwroot\sc477849\Website\bin\Sitecore.ContentSearch.SolrProvider.dll</HintPath>
+    <Reference Include="Sitecore.ContentSearch.SolrProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Sitecore.ContentSearch.SolrProvider.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.8.1.1\lib\Sitecore.Kernel.dll</HintPath>
