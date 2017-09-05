@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,10 @@
       <HintPath>..\packages\SC.Sitecore.Analytics.Model.8.1.3\lib\Sitecore.Analytics.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Buckets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.Buckets.8.1.3\lib\Sitecore.Buckets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Cintel">
       <HintPath>..\packages\SC.Sitecore.Cintel.8.1.3\lib\Sitecore.Cintel.dll</HintPath>
       <Private>False</Private>
@@ -60,7 +65,7 @@
       <HintPath>..\packages\SC.Sitecore.ContentSearch.Linq.8.1.3\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="">
+    <Reference Include="Sitecore.ContentSearch.SolrProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\Sitecore.ContentSearch.SolrProvider.dll</HintPath>
     </Reference>
@@ -76,6 +81,7 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buckets\Pipelines\DisableLanguageFilterProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryLatestVisitorsFromSearch.cs" />
     <Compile Include="SupportSolrAnalyticsSearchContext.cs" />
